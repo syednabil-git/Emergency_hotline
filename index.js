@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Try Clipboard API first
       let copied = false;
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -67,42 +66,38 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("navigator.clipboard failed:", err);
       }
 
-      // Fallback: hidden textarea + execCommand('copy')
       if (!copied) {
         try {
           const ta = document.createElement("textarea");
           ta.value = textToCopy;
-          // keep off-screen to avoid page jump
           ta.style.position = "fixed";
           ta.style.left = "-9999px";
           document.body.appendChild(ta);
           ta.focus();
           ta.select();
-
-          // execCommand may return true/false or throw
           const ok = document.execCommand("copy");
           document.body.removeChild(ta);
           if (ok) copied = true;
-          else console.warn("execCommand returned false");
         } catch (err) {
           console.warn("execCommand fallback failed:", err);
         }
       }
 
-      // Final fallback: prompt box so user can manually copy
       if (!copied) {
         try {
           window.prompt("Copy the text below (Ctrl/Cmd+C, Enter):", textToCopy);
         } catch (err) {
-          // worst case — just alert the user
           alert("Copy failed. Please select the text and press Ctrl/Cmd+C.");
         }
       } else {
-        // only count as copied when we succeeded with API or execCommand
+        // ✅ Show alert after successful copy
+        alert(`Copied: ${textToCopy}`);
+
+        // Update copy count
         copies++;
         updateCopyDisplay();
 
-        // small UI feedback
+        // Visual feedback on the button
         const oldHTML = button.innerHTML;
         button.innerHTML = "✅ Copied!";
         button.disabled = true;
