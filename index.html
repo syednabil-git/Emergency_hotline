@@ -23,13 +23,13 @@
             </div>
             <div>
                 <div class="flex justify-center items-center w-15 md:w-25 md:h-10 rounded-3xl bg-[#41FF6B1A]">
-                <p class="font-bold">100</p>
+                <span id="coin-display" class="font-bold">100</span>
                 <img src="assets/coin.png" class="w-5 ml-1">
                 </div>
             </div>
             <div>
                 <div class="flex justify-center gap-2 items-center border-2 bg-[#00A63E] w-17 md:w-25 md:h-10 rounded-3xl text-white">
-                <p class="font-bold">0</p>
+                <span id="copy-count">0</span>
                 <p class="font-bold">Copy</p>
                 </div>
             </div>
@@ -47,25 +47,25 @@
     <!-- services  -->
     <section class="">
         <div class="parent_div md:flex justify-center items-center mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 w-270 m-6 md:m-10 ">
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
-                <div class="flex justify-between items-center mb-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 w-270 m-6 md:m-10">
+                <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
+                  <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/emergency.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
                     
                 </div>
                 <p class="font-bold text-lg">National Emergency Number</p>
                 <p class="mb-2">National Emergency</p>
-                <p class="font-bold text-2xl mb-1">999</p>
+                <p class="font-bold text-2xl mb-1 copy-text">999</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">All</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/fire-service.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -73,16 +73,16 @@
                 </div>
                 <p class="font-bold text-lg">Fire Service Number</p>
                 <p class="mb-2">Fire Service</p>
-                <p class="font-bold text-2xl mb-1">999</p>
+                <p class="font-bold text-2xl mb-1 copy-text">999</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Fire</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/brac.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -90,16 +90,16 @@
                 </div>
                 <p class="font-bold text-lg">Brac Helpline</p>
                 <p class="mb-2">Brac</p>
-                <p class="font-bold text-2xl mb-1">16445</p>
+                <p class="font-bold text-2xl mb-1 copy-text">16445</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">NGO</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/police.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -107,16 +107,16 @@
                 </div>
                 <p class="font-bold text-lg">Police Helpline Number</p>
                 <p class="mb-2">Police</p>
-                <p class="font-bold text-2xl mb-1">999</p>
+                <p class="font-bold text-2xl mb-1 copy-text">999</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Police</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/ambulance.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -124,16 +124,16 @@
                 </div>
                 <p class="font-bold text-lg">Ambulance Service</p>
                 <p class="mb-2">Ambulance</p>
-                <p class="font-bold text-2xl mb-1">999</p>
+                <p class="font-bold text-2xl mb-1 copy-text">999</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Health</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/emergency.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -141,16 +141,16 @@
                 </div>
                 <p class="font-bold text-lg">Women & Child Helpline</p>
                 <p class="mb-2">Women & Child Helpline</p>
-                <p class="font-bold text-2xl mb-1">109</p>
+                <p class="font-bold text-2xl mb-1 copy-text">109</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Help</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/emergency.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -158,16 +158,16 @@
                 </div>
                 <p class="font-bold text-lg">Anti-Corruption Helpline</p>
                 <p class="mb-2">Anti-Corruption</p>
-                <p class="font-bold text-2xl mb-1">106</p>
+                <p class="font-bold text-2xl mb-1 copy-text">106</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Govt</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/emergency.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -175,16 +175,16 @@
                 </div>
                 <p class="font-bold text-lg">Electricity Helpline</p>
                 <p class="mb-2">Electricity outage</p>
-                <p class="font-bold text-2xl mb-1">16216</p>
+                <p class="font-bold text-2xl mb-1 copy-text">16216</p>
                 <div class="bg-gray-100 rounded-3xl w-20 flex justify-center mb-3"><p class="text-center">Electricity</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>
-            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl">
+            <div class="w-80 p-5 bg-white rounded-lg drop-shadow-xl card ">
                 <div class="flex justify-between items-center mb-2">
                     <div class="w-10 h-10 p-2 bg-red-100 rounded-xl"><img src="assets/emergency.png"></div>
                     <div class=""><span><i class="fa-solid fa-heart"></i></span></div>
@@ -192,12 +192,12 @@
                 </div>
                 <p class="font-bold text-lg">Bangladesh Railway Helpline</p>
                 <p class="mb-2">Bangladesh Railway</p>
-                <p class="font-bold text-2xl mb-1">163</p>
+                <p class="font-bold text-2xl mb-1 copy-text">163</p>
                 <div class="bg-gray-100 rounded-3xl w-15 flex justify-center mb-3"><p class="text-center">Travel</p></div>
                 <div class="flex gap-1">
-                    <div><button class="shadow-md font-bold px-5 rounded-lg w-35 h-8"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
+                    <div><button class="copy-button shadow-md font-bold px-5 rounded-lg w-35 h-8" class="copy-button" data-number="999"><span><i class="fa-solid fa-copy"></i></span> Copy</button>
                     </div>
-                    <div><button class="shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
+                    <div><button class="call-button shadow-md border-2 font-bold px-5 rounded-lg text-white w-35 h-8 bg-[#00A63E]"><span><i class="fa-solid fa-phone"></i></span> Call</button>
                     </div>
                 </div>
             </div>    
@@ -214,15 +214,13 @@
                     <p>999</p>
                 </div>
                 <div>
-                    time
+                   time
                 </div>
            </div>
         </div>
     </div>
         
     </section>
-    <main>
-
-    </main>
+    <script src="./index.js"></script>
 </body>
 </html>
