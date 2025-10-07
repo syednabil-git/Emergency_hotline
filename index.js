@@ -117,3 +117,75 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCopyDisplay();
 });
 
+
+// heart icon toogle
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hearts = document.querySelectorAll(".heart-icon"); // select all heart icons
+    const heartCountDisplay = document.getElementById("heart-count");
+    let heartCount = 0;
+
+    hearts.forEach(heart => {
+        let liked = false; // track state per card
+
+        heart.addEventListener("click", function () {
+            if (!liked) {
+                heart.querySelector("i").classList.add("text-red-500"); // turn red
+                heartCount++;
+                liked = true;
+            } else {
+                heart.querySelector("i").classList.remove("text-red-500"); // remove red
+                heartCount--;
+                liked = false;
+            }
+            heartCountDisplay.textContent = heartCount; // update navbar
+        });
+    });
+});
+
+//.........call history.....
+
+document.addEventListener("DOMContentLoaded", function () {
+  const callButtons = document.querySelectorAll(".call-button"); // All "Call" buttons
+  const historyList = document.getElementById("history-list"); // Call history area
+  const clearBtn = document.getElementById("clear-history");
+
+  // Function to get current time in readable format
+  function getCurrentTime() {
+    const now = new Date();
+    return now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+  }
+
+  // Add event listener for all call buttons
+  callButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".card"); // Parent card
+      const name = card.querySelector(".service-name").textContent;
+      const number = card.querySelector(".service-number").textContent;
+      const time = getCurrentTime();
+
+      // Create a new history entry
+      const entry = document.createElement("div");
+      entry.classList.add("bg-gray-100", "p-3", "rounded-md", "mt-2", "shadow-sm");
+      entry.innerHTML = `
+        <div class="flex justify-between items-center mx-auto w-85">
+          <div>
+            <p class="font-semibold">${name}</p>
+            <p>${number}</p>
+          </div>
+          <p class="text-sm text-gray-500">${time}</p>
+        </div>
+      `;
+
+      historyList.appendChild(entry);
+    });
+  });
+
+  // Clear button
+  clearBtn.addEventListener("click", () => {
+    historyList.innerHTML = "";
+  });
+});
+
+
